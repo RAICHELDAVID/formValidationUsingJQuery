@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>FORM VALIDATION</title>
+		<link rel="stylesheet" href="./style/style.css">
+	</head>
+	<body>
+		<div class="mainContainer">
+			<h1>REGISTRATION FORM</h1>
+			<form id="myForm" action="welcome.html" autocomplete="off">
+				<div>
+					<label for="firstName">Enter First name:</label>
+					<input type=text id="firstName"  placeholder="Enter your first name" onkeypress="return (event.charCode > 64 && 
+						event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" >
+					<label for="lastName">Enter Last name:</label>
+					<input type=text id="lastName"  placeholder="Enter your last name" onkeypress="return (event.charCode > 64 && 
+						event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" >
+					<label for="address">Enter your Address:</label>
+					<textarea id="address" placeholder="enter your address" rows="4" cols="66"  onkeypress="return (event.charCode > 64 && 
+						event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" ></textarea>
+					<label for="mobileNumber">Enter mobile number:</label>
+					<input type=text id="mobileNumber" maxlength="10"  placeholder="Enter your mobile number" onkeypress="return (event.charCode >47 && 
+						event.charCode < 59)">
+					<label for="emailID">Enter email id:</label>
+					<input type=text id="emailID"  placeholder="Enter your email id">
+					<label for="password">Enter password:</label>
+					<input type="text" id="password"  placeholder="New password">
+					<label for="confirmPassword">Confirm password:</label>
+					<input type="password" id="confirmPassword"  placeholder="confirm password">
+				</div>
+				<button type="submit" value="Submit">Submit</button>
+			</form>
+		</div>
+		<script src="script/jquery.js"></script>
+		<script src="script/script.js"></script>
+	</body>
+</html>
